@@ -1,0 +1,2 @@
+this bellow command will recursively search starting from the current directory for any 50 character alphanumeric strings.  This is the flag format
+grep -rEo '\b[A-Za-z0-9]{50}\b'

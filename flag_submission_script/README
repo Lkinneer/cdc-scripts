@@ -1,0 +1,21 @@
+so this script makes two different requests one to: https://iscore.iseage.org/red/flag/lookup/
+and one to: https://iscore.iseage.org/red/flag/capture/
+
+to use the script:
+
+go to those urls in a web browser
+open the networking section in the dev tools
+make a request to lookup a flag
+make a request to capture a flag (you can put in the wrong flag data)
+
+for each reqest make note of
+csrftoken
+sessionid
+csrfmiddlewaretoken
+
+then change the print_flag_data and submit_flag functions so they include this data
+
+then run the script with the following arguments
+python3 submit_flags.py --reason "default creds" some_flags.txt
+
+where "some_flags.txt" is a file of flag data seperated by newlines

